@@ -49,3 +49,26 @@ function done() {
 }
 
 call("javaScript", done);
+
+let obj = {
+    width: 440,
+    heigth: 350,
+    bool: true
+};
+
+console.log(obj.heigth);
+obj.name = "Rudik";
+obj.parametrs = {
+    age: 33,
+    surname: "Kovalevskiy"
+};
+
+delete obj.name;
+
+console.log(obj);
+
+for (let key in obj) {
+    console.log("Свойство : " + key + "  значение : " + obj[key]);
+}
+
+console.log(Object.keys(obj).length);
