@@ -34,3 +34,18 @@ function second() {
 
 first();
 second();
+
+function call(lang, callback) {
+    console.log("Я учу :" + lang);
+    callback();
+}
+
+//call("JavaScript", function(){
+//   console.log("Мне нравится этот язык");
+//});
+
+function done() {
+    console.log("Мне нравиться этот язык");
+}
+
+call("javaScript", done);
