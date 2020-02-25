@@ -21,3 +21,16 @@ console.log(parseFloat(twelfe));
 
 let one = "33.456";
 console.log(Math.round(one));
+
+function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
