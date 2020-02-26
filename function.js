@@ -103,7 +103,7 @@ for (let key of mass) {
 let ans = prompt("", ""),
     arrs = [];
 
-arrs = ans.split(',');
+arrs = ans.split(','); // Переводит строку в массив []
 
 console.log(arrs);
 
@@ -113,7 +113,7 @@ let element = ["one", "two", "five"],
 console.log(element); //[ 'one', 'two', 'five' ]
 
 let elements = ["one", "two", "five"],
-    is = element.join(', ');
+    is = element.join(', '); //Переводит массив в строку
 
 console.log(is); //one, two, five
 
@@ -187,7 +187,7 @@ var shallowCopy = fruits.slice(); // так можно создать копию
 // ["Клубника", "Манго"]
 
 var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
-console.log(years .0); // синтаксическая ошибка
+//console.log(years.0); // синтаксическая ошибка
 console.log(years[0]); // работает как положено
 
 var promise = {
@@ -260,3 +260,18 @@ console.log(board.join('\n') + '\n\n');
 board[4][4] = board[6][4];
 board[6][4] = ' ';
 console.log(board.join('\n'));
+
+
+let soldier = {
+    sila: 100,
+    rost: 170
+};
+
+let john = {
+    sila: 250
+};
+
+john.__proto__ = soldier;
+
+console.log(john);
+console.log(john.rost);
