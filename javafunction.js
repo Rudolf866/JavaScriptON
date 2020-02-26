@@ -75,7 +75,7 @@ let appData = {
             appData.income.push(prompt("Может что-то ещё ? ", '')); //В конец массива добавляем запись
             appData.income.sort(); //Сортируем по алфавиту
         }
-        appData.income.forEach(function(itemmassive, i) {
+        appData.income.forEach(function(itemmassive, i) { //Значение массива и индекс
             alert("Способы доп. заработка: " + (i + 1) + " - " + itemmassive);
         });
     }
